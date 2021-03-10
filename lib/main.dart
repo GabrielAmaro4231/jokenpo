@@ -14,7 +14,6 @@ class _MyAppState extends State<MyApp> {
   String imageScissors = 'assets/images/scissors.png';
   String imageComputer = 'assets/images/paper.png';
   String mensagem = '';
-  int playerIndex = 0;
   int computerIndex = 0;
 
   numberGenerator() {
@@ -25,7 +24,6 @@ class _MyAppState extends State<MyApp> {
   }
 
   void opcaoPedra() {
-    playerIndex = 0;
     computerIndex = numberGenerator();
 
     if (computerIndex == 0) {
@@ -46,7 +44,6 @@ class _MyAppState extends State<MyApp> {
   }
 
   void opcaoPapel() {
-    playerIndex = 1;
     computerIndex = numberGenerator();
 
     if (computerIndex == 0) {
@@ -67,7 +64,6 @@ class _MyAppState extends State<MyApp> {
   }
 
   void opcaoTesoura() {
-    playerIndex = 2;
     computerIndex = numberGenerator();
 
     if (computerIndex == 0) {
